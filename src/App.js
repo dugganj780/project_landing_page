@@ -64,7 +64,7 @@ function App() {
               Go to Project Video
             </Button>
             <Button variant="contained" className={classes.button}>
-              <a href="../public/Duggan_James_06357628_Handbook.docx" download>
+              <a href="./Duggan_James_06357628_Handbook.docx" download>
                 Download Project Report
               </a>
             </Button>
