@@ -63,11 +63,11 @@ function App() {
             <Button variant="contained" className={classes.button}>
               Go to Project Video
             </Button>
-            <a href="../public/Duggan, James_06357628_Handbook.docx" download>
-              <Button variant="contained" className={classes.button}>
+            <Button variant="contained" className={classes.button}>
+              <a href="../public/Duggan_James_06357628_Handbook.docx" download>
                 Download Project Report
-              </Button>
-            </a>
+              </a>
+            </Button>
             <Button variant="contained" className={classes.button}>
               Go to Web App Repository
             </Button>
