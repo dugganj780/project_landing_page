@@ -69,7 +69,7 @@ function App() {
               </a>
             </Button>
             <Button variant="contained" className={classes.button}>
-              Go to Web App Repository
+              Go to TourPal Web App
             </Button>
           </Stack>
           <Divider />
