@@ -43,7 +43,7 @@ function App() {
               James Duggan, 06357628
             </Typography>
             <Typography variant="h4" align="center">
-              TourPal: A walking tour app built in React and React Native Test
+              TourPal: A walking tour app built in React and React Native
             </Typography>
             <Divider />
             <Button
