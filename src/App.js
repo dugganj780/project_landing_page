@@ -68,7 +68,11 @@ function App() {
                 Download Project Report
               </a>
             </Button>
-            <Button variant="contained" className={classes.button}>
+            <Button
+              variant="contained"
+              className={classes.button}
+              href="https://floating-plateau-29115.herokuapp.com/"
+            >
               Go to TourPal Web App
             </Button>
           </Stack>
