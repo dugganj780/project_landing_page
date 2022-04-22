@@ -1,12 +1,11 @@
-import logo from "./logo.svg";
 import "./App.css";
+import Report from "./Duggan_James_06357628_Final_Report.docx";
 import { Box, Divider, Grid } from "@mui/material";
 import Paper from "@mui/material/Paper";
 import { Button } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import { Typography } from "@mui/material";
 import Stack from "@mui/material/Stack";
-import { Link } from "react-router-dom";
 
 const useStyles = makeStyles({
   paper: {
@@ -64,7 +63,7 @@ function App() {
               Go to Project Video
             </Button>
             <Button variant="contained" className={classes.button}>
-              <a href="./Duggan_James_06357628_Final_Report" download>
+              <a href={Report} download>
                 Download Project Report
               </a>
             </Button>
