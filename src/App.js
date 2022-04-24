@@ -62,7 +62,11 @@ function App() {
             <Button variant="contained" className={classes.button}>
               Go to Project Video
             </Button>
-            <Button variant="contained" className={classes.button}>
+            <Button
+              variant="contained"
+              className={classes.button}
+              href="https://www.youtube.com/watch?v=Sm9z6cEyTsg"
+            >
               <a href={Report} download>
                 Download Project Report
               </a>
