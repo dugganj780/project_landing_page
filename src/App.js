@@ -6,6 +6,12 @@ import { Button } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import { Typography } from "@mui/material";
 import Stack from "@mui/material/Stack";
+import NavigationCard from "./components/NavigationCard";
+import ProjectImageList from "./components/ProjectImageList";
+import ProfileCard from "./components/ProfileCard";
+import Image from "./components/images/map.png";
+import ThemeProvider from "@mui/material/styles/ThemeProvider";
+import { createTheme } from "@mui/material/styles";
 
 const useStyles = makeStyles({
   paper: {
@@ -27,73 +33,59 @@ const useStyles = makeStyles({
     justifyItems: "center",
     width: "100%",
   },
+  container: {
+    backgroundImage: `url(${Image})`,
+    backgroundPosition: "center",
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    width: "100vw",
+    height: "100vh",
+  },
+});
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: "#04A777",
+    },
+    text: {
+      primary: "#024F37",
+      secondary: "#05C78D",
+      disabled: "#06DB9B",
+    },
+    background: {
+      paper: "#EFEAE6",
+      default: "#EFEAE6",
+    },
+  },
+  typography: {},
 });
 
 function App() {
   const classes = useStyles();
 
   return (
-    <Grid container spacing={2}>
-      <Grid item xs={2} />
-      <Grid item xs={8}>
-        <Paper className={classes.paper} elevation={8}>
-          <Stack spacing={4} alignContent="center">
-            <Typography variant="h3" align="center">
-              James Duggan, 06357628
-            </Typography>
-            <Typography variant="h4" align="center">
-              TourPal: A walking tour app built in React and React Native
-            </Typography>
-            <Divider />
-            <Button
-              variant="contained"
-              className={classes.button}
-              href="https://github.com/dugganj780/walking-tour-web"
-            >
-              Go to Web App Repository
-            </Button>
-            <Button
-              variant="contained"
-              className={classes.button}
-              href="https://github.com/dugganj780/walking_tour_mobile"
-            >
-              Go to Mobile App Repository
-            </Button>
-            <Button variant="contained" className={classes.button}>
-              Go to Project Video
-            </Button>
-            <Button
-              variant="contained"
-              className={classes.button}
-              href="https://www.youtube.com/watch?v=Sm9z6cEyTsg"
-            >
-              <a href={Report} download>
-                Download Project Report
-              </a>
-            </Button>
-            <Button
-              variant="contained"
-              className={classes.button}
-              href="https://floating-plateau-29115.herokuapp.com/"
-            >
-              Go to TourPal Web App
-            </Button>
-          </Stack>
-          <Divider />
-
-          <Typography variant="body1">
-            To use the mobile app you will need to download the ExpoGo app for
-            your mobile device and scan the QR code at the following link:
-          </Typography>
-          <a href="https://expo.dev/@jamesduggan/walking_tour_mobile">
-            <Typography align="center">
-              https://expo.dev/@jamesduggan/walking_tour_mobile
-            </Typography>
-          </a>
-        </Paper>
-        <Grid item xs={2} />
-      </Grid>
-    </Grid>
+    <ThemeProvider theme={theme}>
+      <Paper>
+        <Typography variant="h3" align="center">
+          TourPal
+        </Typography>
+        <Typography variant="h5" align="center" gutterBottom>
+          A walking tour app built in React and React Native
+        </Typography>
+        <Grid container spacing={2} className={classes.container}>
+          <Grid item xs={1} />
+          <Grid item xs={5}>
+            <ProfileCard />
+            <ProjectImageList />
+          </Grid>
+          <Grid item xs={5}>
+            <NavigationCard />
+            <Grid item xs={1} />
+          </Grid>
+        </Grid>
+      </Paper>
+    </ThemeProvider>
   );
 }
 
