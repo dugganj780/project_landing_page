@@ -41,6 +41,16 @@ export default function NavigationCard() {
         <Grid item xs={1} />
         <Grid item xs={6}>
           <Stack spacing={4} alignContent="center">
+            <Button variant="contained" className={classes.button}>
+              <a href={Report} download>
+                Download Project Report
+              </a>
+            </Button>
+            <Button variant="contained" className={classes.button}>
+              <a href={Slides} download>
+                Download Presentation Slides
+              </a>
+            </Button>
             <Button
               variant="contained"
               className={classes.button}
@@ -62,16 +72,7 @@ export default function NavigationCard() {
             >
               Go to Project Video
             </Button>
-            <Button variant="contained" className={classes.button}>
-              <a href={Report} download>
-                Download Project Report
-              </a>
-            </Button>
-            <Button variant="contained" className={classes.button}>
-              <a href={Slides} download>
-                Download Presentation Slides
-              </a>
-            </Button>
+
             <Button
               variant="contained"
               className={classes.button}
