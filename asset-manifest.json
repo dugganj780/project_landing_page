@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/project_landing_page/static/css/main.073c9b0a.css",
-    "main.js": "/project_landing_page/static/js/main.ab6554c8.js",
+    "main.js": "/project_landing_page/static/js/main.6a23ec35.js",
     "static/js/787.716fa96b.chunk.js": "/project_landing_page/static/js/787.716fa96b.chunk.js",
     "static/media/Duggan_James_06357628_Final_Report.docx": "/project_landing_page/static/media/Duggan_James_06357628_Final_Report.14d2f813e047d892fb2f.docx",
     "static/media/Screenshot_20220403-104338.png": "/project_landing_page/static/media/Screenshot_20220403-104338.d73019fd0682f36cd574.png",
@@ -15,11 +15,11 @@
     "static/media/HandBookImage.jpg": "/project_landing_page/static/media/HandBookImage.80f0bae239586e65b043.jpg",
     "index.html": "/project_landing_page/index.html",
     "main.073c9b0a.css.map": "/project_landing_page/static/css/main.073c9b0a.css.map",
-    "main.ab6554c8.js.map": "/project_landing_page/static/js/main.ab6554c8.js.map",
+    "main.6a23ec35.js.map": "/project_landing_page/static/js/main.6a23ec35.js.map",
     "787.716fa96b.chunk.js.map": "/project_landing_page/static/js/787.716fa96b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.ab6554c8.js"
+    "static/js/main.6a23ec35.js"
   ]
 }
