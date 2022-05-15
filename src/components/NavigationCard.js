@@ -1,5 +1,7 @@
 import React, { useRef, useState } from "react";
 import Report from "../Duggan_James_06357628_Final_Report.docx";
+import Slides from "../TourPal Presentation.pdf";
+
 import { Box, Divider, Grid } from "@mui/material";
 import Paper from "@mui/material/Paper";
 import { Button } from "@mui/material";
@@ -63,6 +65,11 @@ export default function NavigationCard() {
             <Button variant="contained" className={classes.button}>
               <a href={Report} download>
                 Download Project Report
+              </a>
+            </Button>
+            <Button variant="contained" className={classes.button}>
+              <a href={Slides} download>
+                Download Presentation Slides
               </a>
             </Button>
             <Button
